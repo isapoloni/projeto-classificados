@@ -23,6 +23,8 @@
 }
 
 header {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: var(--cor3);
@@ -60,19 +62,35 @@ section {
     display: flex;
     flex-flow: wrap row;
     justify-content: space-around; 
+    padding-top: 100px;
 }
 
 section img {
     width: 200px;
     height: 200px;
+    margin: 10px;
 }
     
 section div {
     margin-top: 30px;
     width: 400px;
     border-radius: 10px;
-    background-color: antiquewhite;
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+}
+
+section .bulbasaur, .ivysaur, .venusaur {
+    background-color: #c0fbc9b0;
+}
+
+section .chamander, .charmeleon, .charizard {
+    background-color: #fbc0c0b0;
+}
+
+section .squirtle, .wartortle, .blastoise {
+    background-color: #c0f7fbb0;
 }
 
 .tipo-pokemon {
@@ -81,11 +99,41 @@ section div {
 }
 
 .container-escondido > p {
+    border-radius: 10px;
     display: none;
+    margin: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.container-escondido:hover  > p{
-    display: block;
-    
+.bulbasaur > .container-escondido > p, .ivysaur > .container-escondido > p, .venusaur > .container-escondido > p {
+    background-color: #648268b0;
+}
 
+.chamander > .container-escondido > p, .charmeleon> .container-escondido > p, .charizard > .container-escondido > p {
+    background-color: rgba(168, 106, 106, 0.69);
+}
+
+.squirtle > .container-escondido > p, .wartortlener-escondido > p, .blastoise > .container-escondido > p {
+    background-color: rgba(106, 147, 168, 0.69);
+}
+
+.container-escondido:hover > p {
+    display: block;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+.evolucoes img {
+    width: 65px;
+    height: 65px;
+}
+
+.evolucoes .seta {
+    width: 30px;
+    height: 30px;
 }
