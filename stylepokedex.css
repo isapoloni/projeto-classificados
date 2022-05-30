@@ -63,6 +63,7 @@ section {
     flex-flow: wrap row;
     justify-content: space-around; 
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 section img {
@@ -77,7 +78,7 @@ section div {
     border-radius: 10px;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
 }
 
@@ -93,6 +94,7 @@ section .squirtle, .wartortle, .blastoise {
     background-color: #c0f7fbb0;
 }
 
+
 .tipo-pokemon {
     width: 45px;
     height: 45px;
@@ -103,18 +105,7 @@ section .squirtle, .wartortle, .blastoise {
     display: none;
     margin: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.bulbasaur > .container-escondido > p, .ivysaur > .container-escondido > p, .venusaur > .container-escondido > p {
-    background-color: #648268b0;
-}
-
-.chamander > .container-escondido > p, .charmeleon> .container-escondido > p, .charizard > .container-escondido > p {
-    background-color: rgba(168, 106, 106, 0.69);
-}
-
-.squirtle > .container-escondido > p, .wartortlener-escondido > p, .blastoise > .container-escondido > p {
-    background-color: rgba(106, 147, 168, 0.69);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
 }
 
 .container-escondido:hover > p {
@@ -122,10 +113,38 @@ section .squirtle, .wartortle, .blastoise {
     cursor: pointer;
 }
 
+.bulbasaur > .container-escondido > p, .ivysaur > .container-escondido > p, .venusaur > .container-escondido > p {
+    background-color: #648268b0;
+    margin: 8px;
+}
+
+.chamander > .container-escondido > p, .charmeleon> .container-escondido > p, .charizard > .container-escondido > p {
+    background-color: rgba(168, 106, 106, 0.69);
+    margin: 8px;
+    
+}
+
+.squirtle > .container-escondido > p, .wartortle > .container-escondido > p, .blastoise > .container-escondido > p {
+    background-color: rgba(106, 147, 168, 0.69);
+    margin: 8px;
+}
+
+
 button {
     cursor: pointer;
     border: none;
     border-radius: 3px;
+    background-color: #f8cf56;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+}
+
+button:active {
+    background-color:#BF9004;
+
 }
 
 .evolucoes img {
@@ -136,4 +155,22 @@ button {
 .evolucoes .seta {
     width: 30px;
     height: 30px;
+}
+
+.legenda {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 300px;
+    padding: 5px;
+    background-color: #F2B705;
+}
+
+.legenda a {
+    text-decoration: none;
+    color: black;
+}
+
+.legenda a:hover {
+    text-decoration: underline;
 }
