@@ -63,6 +63,9 @@ nav a:hover {
 /* ===========================final header=================================================== */
 
 /*================== inicio da section da landing page ======================================*/
+
+
+
 .section-landing-page {
     height: 100vh;
     display: flex;
@@ -90,7 +93,7 @@ nav a:hover {
 }
 
 #text p {
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: #162D59;
@@ -105,12 +108,12 @@ nav a:hover {
     flex-flow: wrap row;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
     height: 100vh;
     width: 100%;
     background-color: rgba(250, 235, 215, 0.101);
-    padding-top: ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
-    color: rgb(224, 231, 237);
+    color: rgb(243, 248, 253);
 }
 
 .section-cartas img {
@@ -126,7 +129,7 @@ nav a:hover {
     justify-content: space-around;
     margin: 9px;
     width: 320px;
-    height: 500px;
+    height: 600px;
     background-color: var(--cor2);
     padding:15px;
     border-radius: 2px;
@@ -146,10 +149,12 @@ nav a:hover {
 
 .titulo {
     font-size: 20px;
+
 }
 
-
-
+.valor {
+    font-size: 16px;
+}
 
 .carta1 button, .carta2 button, .carta3 button, .carta4 button {
     background-color: var(--cor4);
@@ -161,3 +166,17 @@ nav a:hover {
     cursor: pointer;
 }
 
+.carta1 button:hover, .carta2 button:hover, .carta3 button:hover, .carta4 button:hover {
+    background-color: var(--cor5);
+    transition: all 0.3s ease 0s;
+}
+
+.contato img {
+    margin-top: -10px;
+    width: 60px;
+    height: 60px;
+}
+
+/* ==============================       fim section cartas ================================================================*/
+
+/* ==============================       inicio section cadastrar cartas ===================================================*/

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página inicial</title>
+    <title>Cadastrar Carta</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://img.icons8.com/color/344/pokeball-2.png" type="image/x-icon">
 </head>
@@ -18,12 +18,19 @@
             <a href="">Portifolio</a>
         </nav>         
     </header>
-    <section class="section-landing-page">
-        <div id="text">
-            <h1>Seja bem vindo(a) á Pokedex!</h1>
-            <p>Aqui você encontra os classificados das cartas mais caras do universo pókemon, você possuí alguma rara e deseja vender? divulgue aqui também!</p>
-        </div>
-        <img src="imagens/pokedex.gif.opdownload" alt="Gif de uma pokedex">
+
+    <section>
+        <form>
+            <div>
+                Cadastro da carta
+            </div>
+            <div>
+                <label for="nome-carta">Nome</label>
+                <input type="text" name="nome-carta" placeholder="Digite o nome da sua carta">
+                <label for="ano-carta">Ano</label>
+                <input type="number" name="ano-carta">
+            </div>
+        </form>
     </section>
 </body>
 </html>
