@@ -34,6 +34,11 @@ header {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
 }
 
+header #icon {
+    width: 40px;
+    height: 40px;
+}
+
 header > img {
     width: 115px;
     height: 50px;
@@ -162,7 +167,7 @@ nav a:hover {
     width: 150px;
     padding: 6px;
     border-radius: 2px;
-    border: 2px solid rgb(78, 70, 70);
+    border: 1px solid rgb(78, 70, 70);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
     cursor: pointer;
 }
@@ -184,14 +189,20 @@ nav a:hover {
 
 
 .section-formulario {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 50px;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
-    color: rgb(0, 3, 5);
+    color:  #f2d205;
     background-color: rgba(204, 231, 252, 0.844);
 }
+
+
 
 form {
     margin-top: 60px;
@@ -203,10 +214,15 @@ form {
 
 .container-form {
     width: 500px;
-    height: 670px;  
+    height: 700%;  
     background-color: var(--cor2);
-    padding: 20px;
+    padding: 25px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+    border-radius: 2px;
+    border: 1px solid rgb(78, 70, 70);
 }
+
 
 .inputs-form {
     display: flex;
@@ -220,4 +236,65 @@ form {
     height: 25px;
     margin: 10px;
     padding: 4px;
+    border-radius: 2px;
+    border: none;
+    border: 1px solid rgb(78, 70, 70);
 }
+
+
+.inputs-form h1 {
+   margin: 0 auto;
+   
+}
+
+.inputs-form label {
+    margin-top: 10px;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 250px;
+    resize: none;
+}
+
+.buttons-form {
+    width: 300px;
+    margin: auto;
+    
+}
+
+.buttons-form button {
+    width: 100px;
+    padding: 6px;
+    margin-top: 30px;
+    border-radius: 2px;
+    border: 1px solid rgb(78, 70, 70);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+}
+
+#button1 {
+    margin-left: 15px;
+    background-color: #f5e2dd;
+}
+
+#button2 {
+    margin-left: 40px;
+    background-color: #f2de05;
+}
+
+#button1:hover {
+    background-color: #f7abab;
+}
+
+#button2:hover {
+    background-color: #f2d205;
+}
+
+#gif-lugia {
+    width: 300px;
+    height:300px;
+    margin: 30px;
+}
+
