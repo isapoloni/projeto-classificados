@@ -71,7 +71,7 @@ nav a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(250, 235, 215, 0.101);
+    background-color: rgba(204, 231, 252, 0.844);
 }
 
 .section-landing-page img {
@@ -114,6 +114,7 @@ nav a:hover {
     background-color: rgba(250, 235, 215, 0.101);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
     color: rgb(243, 248, 253);
+    background-color: rgba(204, 231, 252, 0.844);
 }
 
 .section-cartas img {
@@ -180,3 +181,43 @@ nav a:hover {
 /* ==============================       fim section cartas ================================================================*/
 
 /* ==============================       inicio section cadastrar cartas ===================================================*/
+
+
+.section-formulario {
+    padding-top: 50px;
+    height: 100vh;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 3, 5);
+    background-color: rgba(204, 231, 252, 0.844);
+}
+
+form {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container-form {
+    width: 500px;
+    height: 670px;  
+    background-color: var(--cor2);
+    padding: 20px;
+}
+
+.inputs-form {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.inputs-form input, select{
+    width: 50%;
+    height: 25px;
+    margin: 10px;
+    padding: 4px;
+}
