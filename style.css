@@ -155,7 +155,6 @@ nav a:hover {
 
 .titulo {
     font-size: 20px;
-
 }
 
 .valor {
@@ -183,6 +182,99 @@ nav a:hover {
     height: 60px;
 }
 
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    padding: 20px;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sobre-a-carta {
+    display: flex;
+    flex-direction: wrap row;
+    background-color: #f27373;
+    padding: 20px;
+}
+
+.sobre-a-carta img {
+    width: 450px;
+    height: 400px;
+    margin: 0px 20px 0px 0px;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.descricao-carta > img {
+    width: 50%;
+    height: 170px;
+}
+
+.titulo {
+    margin: 5px;
+}
+
+.valor-ano h2, h3 {
+    margin: 5px;
+}
+
+.descricao-carta h4, p {
+    margin: 10px;
+}
+
+.descricao-vendedor {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-color: lightgreen;
+}
+
+.descricao-vendedor img {
+    width: 80px;
+    height: 80px;
+}
+
+.compra-troca {
+    background-color: cornflowerblue;
+}
+
+.fechar {
+    position: absolute;
+    width: 30px;
+    right: -1px;
+    top: -1px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+}
+
+.fechar:hover {
+    background: #f27373;
+}
+
 /* ==============================       fim section cartas ================================================================*/
 
 /* ==============================       inicio section cadastrar cartas ===================================================*/
@@ -201,8 +293,6 @@ nav a:hover {
     color:  #f2d205;
     background-color: rgba(204, 231, 252, 0.844);
 }
-
-
 
 form {
     margin-top: 60px;
@@ -298,49 +388,7 @@ textarea {
     margin: 30px;
 }
 
-.modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 99999;
-    opacity:0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
-    padding: 10px;
-  }
 
-.modal:target {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.modal > div {
-    width: 400px;
-    position: relative;
-    margin: 10% auto;
-    padding: 15px 20px;
-    background: #fff;
-}
-
-.fechar {
-    position: absolute;
-    width: 30px;
-    right: -15px;
-    top: -20px;
-    text-align: center;
-    line-height: 30px;
-    margin-top: 5px;
-    background: #ff4545;
-    border-radius: 50%;
-    font-size: 16px;
-    color: #8d0000;
-}
   
 /* ==============================       fim section cadastrar cartas ===================================================*/
 
