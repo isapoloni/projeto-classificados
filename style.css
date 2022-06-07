@@ -22,7 +22,7 @@
     --cor5:#BF9004;
 }
 
-/* ==================================Inicio header=================================== */
+/* Inicio header */
 
 header {
     position: fixed;
@@ -65,9 +65,9 @@ nav a:hover {
     color: var(--cor2);
 }
 
-/* ===========================final header=================================================== */
+/* final header */
 
-/*================== inicio da section da landing page ======================================*/
+/* inicio da section da landing page */
 
 
 
@@ -104,9 +104,9 @@ nav a:hover {
     color: #162D59;
 }
 
-/*=============================== final da section da landing page ===========================================================*/
+/* final da section da landing page */
 
-/* ==============================       inicio section cartas ================================================================*/
+/* inicio section cartas */
 
 .section-cartas {
     display: flex;
@@ -324,9 +324,9 @@ nav a:hover {
     background: #f27373;
 }
 
-/* ==============================       fim section cartas ================================================================*/
+/* fim section cartas */
 
-/* ==============================       inicio section cadastrar cartas ===================================================*/
+/* inicio section cadastrar cartas */
 
 
 .section-formulario {
@@ -439,9 +439,9 @@ textarea {
 
 
   
-/* ==============================       fim section cadastrar cartas ===================================================*/
+/*fim section cadastrar cartas */
 
-/* ==============================       inicio section portifolio ===================================================*/
+/* inicio section portifolio */
 
 #text {
     text-align: center;
@@ -456,4 +456,9 @@ textarea {
 
 .image-and-ra h2 {
     text-align: center;
+}
+
+#gif-pikachu {
+    width: 250px;
+    height: 250px;
 }
